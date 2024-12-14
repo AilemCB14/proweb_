@@ -1,5 +1,3 @@
-# Programación Web Evaluación Nro. 2
+# Programación Web Evaluación Nro. 3
 
 *Ailem Cañizalez* 
-
-Crear una landing page (página web) usando solo estructuras html (sin css ni javascripts).

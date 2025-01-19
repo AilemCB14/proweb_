@@ -3,101 +3,129 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mari&Yuly</title>
-        <link rel="stylesheet" href="./style.css">
+        <title>Mari&Yuly</title> <!--Titulo de la pagina web-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!--link para inconos de redes sociales utilizados en la pagina-->
+        <link rel="stylesheet" href="./style.css"> <!--Vinculacion con el css para personalizar la pagina web -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <!-- Nombre de la Página -->
-            <div class="container d-flex justigy-content-between align-center">
-                <a class="logo" href="">
-                    Mari&Yuly
-                </a>
-                <!--Barra de busqueda-->
-            <nav>
-                <ul class="d-flex ">
-                    <li>
-                        <a href="" class="nav-item">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="" class="nav-item">Menú</a>
-                    </li>
-                    <li>
-                        <a href="" class="nav-item">Acerca de Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="" class="nav-item">Contáctanos</a>
-                    </li>
-                </ul>
-            </nav>
-            </div>
+
+        <header class="header" id="inicio">
+            <div class="menu container">
+                <a href="#inicio" class="logo">Mari&Yuly</a>
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                    <img src="./img_html/menu.png" class="menu-icono" alt=""> 
+                </label> <!--Menu desplegable para pantalla pequeña (ejemplo: telefono)-->
+                <nav class="navbar">
+                    <ul> <!--Barra de navegacion-->
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#mn">Menú</a></li>
+                        <li><a href="#acerca_de">Acerca de Nosotros</a></li>
+                        <li><a href="#cnt">Contáctanos</a></li>
+                    </ul>
+                </nav>
+            </div> <!--Fin del menu container-->
+
+            <div class="header-content container">
+                 <h1>Yogurt</h1>
+                 <p>
+                    ¡No dejes para mañana lo que te puedes comer hoy! Descubre la frescura y el sabor auténtico de nuestro yogurt, 
+                    elaborado con ingredientes de la más alta calidad, nuestro yogurt es perfecto para aquellos que buscan una opción 
+                    saludable y deliciosa. 
+                 </p>
+                 <a href="#acerca_de" class="btn-1">Acerca de Nostros</a>
+            </div> <!--Fin del header-content container-->
         </header>
-       
-        <main>
-            <!-- Contenido de la Página -->
-             <!-- Primera Sección de la Página -->
-            <section class="section-1">
-                <div class="overlay"></div>
-                <div class="content-1 d-flex display-colum align-center justigy-content-center">
-                    <h1 class="text z-index fs-2">NO DEJES PARA MAÑANA LO QUE TE PUEDES COMER HOY</h1>  
+
+        <section class="yogurt">
+            <div class="yogurt-content container" id="mn">
+                <h2>Menú Delicioso de Yogurt</h2>
+                <p class="txt-p">
+                    ¿Sabías que consumir yogurt ofrece numerosos beneficios? Te invitamos a probar cada una de las opciones que ofrecemos, estamos seguros de que disfrutarás de cada uno de nuestros productos, que no solo son sabrosos, sino también nutritivos.
+                </p>
+                <div class="yogurt-group">
+                    <div class="yogurt-1">
+                        <img src="./img_html/natural.jpg" alt="natural">
+                        <h3>Yogurt Natural</h3>
+                        <p>
+                            Cremoso y fresco, ideal para compartir en el hogar
+                        </p>
+                    </div>
+                    <div class="yogurt-1">
+                        <img src="./img_html/frutos-secos.webp" alt="">
+                        <h3>Yogurt Frutos Secos</h3>
+                        <p>
+                            Crunchy y nutritivo, ¡delicioso, una opción saludable!  
+                        </p>
+                    </div>
+                    <div class="yogurt-1">
+                        <img src="./img_html/frutas.webp" alt="">
+                        <h3>Yogurt con Frutas</h3>
+                        <p>
+                            Dulce y jugoso, ideal para comenzar el día con energía.
+                        </p>
                     </div>
                 </div>
-            </section>
-
-            <!-- Segunda Sección de la Página -->
-            <section class="py-3">
-                <div class="container d-flex align-center justigy-content-center">
-                    <div class="column">
-                        <h1 class="py-1 text-2">ACERCA DE NOSOTROS</h1>
-                    <p class="py-1">Descubre la frescura y el sabor auténtico de nuestro yogurt natural, elaborado con ingredientes de la más alta calidad, sin aditivos ni conservantes, nuestro yogurt es perfecto para aquellos que buscan una opción saludable y deliciosa. Ya sea que lo disfrutes solo, con frutas o frutos secos. ¡Prueba la pureza de la naturaleza en cada bocado!</p>
-                    </div>
-                    <div class="image">
-                        <img class="imagen-2" src="/img_html/img_2.jpg" alt="imagen_2">
-                    </div>
-                    <div class="column">
-                        <h1 class="py-1">BENEFICIOS DE COMER YOGURT</h1>
-                        <p>Consumir yogurt ofrece numerosos beneficios para la salud, como promover la salud digestiva gracias a sus probióticos, fortalecer el sistema inmunológico, y proporcionar nutrientes esenciales como calcio y proteínas. Incorporar yogurt en tu dieta es una deliciosa forma de contribuir a tu bienestar general.</p>
-                    </div>
-                </div>
-            </section>
-
-                <!-- Tercera Sección de la Página -->
-                <section class="py-3">
-                    <div class="d-flex justigy-content-between">
-                        <div class="d-flex">
-                            <img src="/img_html/img_4.jpg" alt="img_4">
-                            <img src="/img_html/img_5.jpg" alt="img_5">
-                        </div>
-                            <div class="text-column">
-                            <h1 class="py-3">NATURAL, SALUDABLE Y NUTRITIVO</h1>
-                            <p class="py-1">¡Prueba nuestro delicioso yogurt natural! Hecho con ingredientes frescos y de alta calidad.</p>
-                            <button class="btn">Menú</button>
-                            </div>
-                </section>
-        </main>
-        
-        <!-- Pie de Página -->
-        <footer class="container d-flex justigy-content-center">
-            <div class="display-colum py-1">
-                <h1 class="py-1">CONTÁCTANOS</h1>
-                <span>En nuestras redes sociales</span>
-                <nav>
-                <ul class="d-flex">
-                    <li>
-                        <a href="" class="nav-1" >WhatsApp</a>
-                    </li>
-                    <li>
-                        <a href="" class="nav-item" >Instagram</a>
-                    </li>
-                </ul>
-            </nav>
+                <a href="#cnt" class="btn-1">Contáctanos</a>
             </div>
-            <div class="display-colum padding py-1">
-                <h1 class="py-1">HORARIO</h1>
-                <span>Lunes - Viernes: 9:00 a.m - 5:00 p.m <br> Sábado: 9:00 a.m - 12:00 p.m</span>
+        </section> 
+
+        <main class="contacto">
+            <div class="contacto-content container" id="cnt">
+                <h2>Contáctanos</h2>
+                <div class="contacto-group">
+                    <div class="contacto-1">
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=61572354237402"> <i class="bi bi-facebook"></i> </a>
+                    </div>
+                    <div class="contacto-1">
+                        <a target="_blank" href="https://api.whatsapp.com/send/?phone=584122983062&text&type=phone_number&app_absent=0&wame_ctl=1&fbclid=PAY2xjawH5-3lleHRuA2FlbQIxMAABpn6izdKkns5ax6ruWDtgendOZwMvYIzGOcjlDRGBGXftqFZLDE9lAGeEYw_aem_zh5Be_ZR3iVd8snGDqPaxg"> <i class="bi bi-whatsapp"></i></a>
+                        
+                    </div>
+                    <div class="contacto-1">
+                        <a target="_blank" href="https://www.instagram.com/mariyuly_?igsh=aGh1ajNlZGljbWlt"> <i class="bi bi-instagram"></i></a>
+                        
+                    </div>
+                </div>
+                <p>
+                    ¡Conéctate con nosotros a través de nuestras redes sociales, no pierdas la oportunidad de disfrutar de nuestros deliciosos yogurts que harán estallar de sabor tu paladar! 
+                </p>
+            </div>
+        </main>
+
+        <section class="general">
+            <div class="general-1" id="acerca_de">
+                <h2>Acerca de Nosotros</h2>
+                <p>Descubre la frescura y el sabor auténtico de nuestro yogurt natural, elaborado con ingredientes de la más alta calidad, sin aditivos ni conservantes, nuestro yogurt es perfecto para aquellos que buscan una opción saludable y deliciosa. Ya sea que lo disfrutes solo, con frutas o frutos secos. 
+                </p>
+                <a href="#inicio" class="btn-1">Inicio</a>
+            </div>
+            <div class="general-2"></div>
+        </section>
+
+        <footer class="footer">
+            <ul class="social-icon">
+                <li class="icon-elem">
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=61572354237402"> <i class="bio bi-facebook"></i> </a>
+                </li>
+                <li class="icon-elem">
+                    <a target="_blank" href="https://api.whatsapp.com/send/?phone=584122983062&text&type=phone_number&app_absent=0&wame_ctl=1&fbclid=PAY2xjawH5-3lleHRuA2FlbQIxMAABpn6izdKkns5ax6ruWDtgendOZwMvYIzGOcjlDRGBGXftqFZLDE9lAGeEYw_aem_zh5Be_ZR3iVd8snGDqPaxg"> <i class="bio bi-whatsapp"></i> </a>
+                </li>
+                <li class="icon-elem">
+                    <a target="_blank" href="https://www.instagram.com/mariyuly_?igsh=aGh1ajNlZGljbWlt"> <i class="bio bi-instagram"></i> </a>
+                </li>
+            </ul>
+           <ul class="footer-menu">
+            <li class="footer-elem">
+                <a href="#inicio" class="footer-icono">Inicio</a>
+                <a href="#mn" class="footer-icono">Menú</a>
+                <a href="#acerca_de" class="footer-icono">Acerca de nosotros</a>
+                <a href="#cnt" class="footer-icono">Contáctanos</a>
+            </li>
+           </ul>
+           <p class="text"> @2025 Todos los derechos reservados</p>
         </footer>
     </body>
-</html>
+    </html>
